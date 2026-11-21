@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priscilla Gomes — Apoio Administrativo e Financeiro</title>
+  
+  <!-- Tipografia Editorial: Lora e Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bege: {
+              DEFAULT: '#F6F1EB',
+              escuro: '#EDE5DC',
+              claro: '#FAF7F4'
+            },
+            marrom: {
+              DEFAULT: '#9E7B5E',
+              hover: '#826248',
+              claro: '#C4A88F',
+              texto: '#2C221E',
+              suave: '#6D5D54'
+            },
+            linha: '#DDD2C5'
+          },
+          fontFamily: {
+            serif: ['Lora', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #F6F1EB;
+      color: #2C221E;
+    }
+    .editorial-link {
+      position: relative;
+    }
+    .editorial-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background-color: #9E7B5E;
+      transition: width 0.25s ease;
+    }
+    .editorial-link:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-marrom selection:text-white overflow-x-hidden">
+
+  <!-- Cabeçalho Minimalista -->
+  <header class="sticky top-0 z-50 bg-bege/95 backdrop-blur-sm border-b border-linha">
+    <div class="max-w-5xl mx-auto px-6 sm:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Identificação na Marca -->
+        <a href="#inicio" class="group">
+          <span class="block font-serif text-lg sm:text-xl tracking-tight text-marrom-texto">
+            Priscilla Gomes
+          </span>
+          <span class="block text-[11px] uppercase tracking-[0.18em] text-marrom-suave mt-0.5">
+            Apoio Administrativo e Financeiro
+          </span>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex items-center gap-8 text-sm text-marrom-suave" aria-label="Navegação principal">
+          <a href="#servicos" class="editorial-link hover:text-marrom-texto transition-colors">Serviços</a>
+          <a href="#como-funciona" class="editorial-link hover:text-marrom-texto transition-colors">Processo</a>
+          <a href="#sobre" class="editorial-link hover:text-marrom-texto transition-colors">Sobre</a>
+          <a href="#contato" class="editorial-link hover:text-marrom-texto transition-colors">Orçamento</a>
+        </nav>
+
+        <!-- Ação Direta -->
+        <div class="flex items-center gap-4">
+          <a
+            href="https://wa.me/5591986014252?text=Ol%C3%A1%2C%20Priscilla!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20apoio%20administrativo%20e%20financeiro."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-marrom hover:bg-marrom-hover text-white text-xs sm:text-sm font-medium px-4 py-2.5 rounded-md transition-colors"
+          >
+            <span>Conversar no WhatsApp</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            class="md:hidden p-2 text-marrom-texto hover:text-marrom transition-colors"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 7.5h16.5M3.75 16.5h16.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden pb-6 pt-2 border-t border-linha space-y-3 text-sm">
+        <a href="#servicos" class="mobile-link block py-1.5 text-marrom-texto hover:text-marrom">Serviços</a>
+        <a href="#como-funciona" class="mobile-link block py-1.5 text-marrom-texto hover:text-marrom">Como Funciona</a>
+        <a href="#sobre" class="mobile-link block py-1.5 text-marrom-texto hover:text-marrom">Sobre Mim</a>
+        <a href="#contato" class="mobile-link block py-1.5 text-marrom-texto hover:text-marrom">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Editorial com Foto 1 em destaque separado -->
+  <section id="inicio" class="pt-14 pb-20 sm:pt-20 sm:pb-28 px-6 sm:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-7">
+          <div class="space-y-1.5">
+            <p class="text-xs uppercase tracking-[0.2em] text-marrom font-medium">
+              Priscilla Gomes • Ananindeua/PA
+            </p>
+            <p class="text-xs uppercase tracking-[0.16em] text-marrom-suave">
+              Apoio Administrativo e Financeiro
+            </p>
+          </div>
+
+          <h1 class="font-serif text-3xl sm:text-5xl font-normal text-marrom-texto leading-[1.18] tracking-tight">
+            Organização, clareza e <span class="italic text-marrom">tranquilidade</span> para a sua rotina.
+          </h1>
+
+          <p class="text-base sm:text-lg text-marrom-suave leading-relaxed font-normal">
+            Ajudo pequenos negócios, MEIs, autônomos e pessoas físicas a estruturarem finanças, planilhas, documentos e declarações de Imposto de Renda com proximidade e rigor técnico.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <button
+              type="button"
+              onclick="selectAudienceAndScroll('negocio')"
+              class="bg-marrom hover:bg-marrom-hover text-white text-sm font-medium px-6 py-3.5 rounded-md transition-colors"
+            >
+              Para MEI &amp; Autônomos
+            </button>
+
+            <button
+              type="button"
+              onclick="selectAudienceAndScroll('pessoal')"
+              class="bg-transparent hover:bg-bege-escuro text-marrom-texto border border-marrom/40 text-sm font-medium px-6 py-3.5 rounded-md transition-colors"
+            >
+              Para Pessoa Física
+            </button>
+          </div>
+        </div>
+
+        <!-- Foto 1: Cena do computador no escritório com bordas arredondadas -->
+        <div class="lg:col-span-6">
+          <figure class="space-y-3">
+            <div class="relative aspect-[4/3] bg-bege-escuro overflow-hidden rounded-2xl border border-linha">
+              <img
+                src="fotonotebook.jpg"
+                alt="Tela de apresentação de Priscilla Gomes — Apoio Administrativo e Financeiro em monitor de escritório"
+                onerror="this.onerror=null;this.src='https://placehold.co/800x600/EDE5DC/2C221E?text=Priscilla+Gomes';"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <figcaption class="text-xs text-marrom-suave flex items-center justify-between px-1">
+              <span class="font-medium text-marrom-texto">Priscilla Gomes — Apoio Administrativo e Financeiro</span>
+              <span>Ambiente de trabalho</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="mt-20 pt-12 border-t border-linha grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="space-y-2.5">
+          <span class="font-serif italic text-marrom text-lg">01.</span>
+          <h2 class="font-serif text-lg text-marrom-texto font-medium">
+            Clareza financeira e planilhas
+          </h2>
+          <p class="text-sm text-marrom-suave leading-relaxed">
+            Controles práticos para separar contas, acompanhar entradas e saídas e nunca perder prazos.
+          </p>
+        </div>
+
+        <div class="space-y-2.5">
+          <span class="font-serif italic text-marrom text-lg">02.</span>
+          <h2 class="font-serif text-lg text-marrom-texto font-medium">
+            Rotinas e arquivos organizados
+          </h2>
+          <p class="text-sm text-marrom-suave leading-relaxed">
+            Comprovantes, recibos, informes e controles internos estruturados para você encontrar tudo com facilidade.
+          </p>
+        </div>
+
+        <div class="space-y-2.5">
+          <span class="font-serif italic text-marrom text-lg">03.</span>
+          <h2 class="font-serif text-lg text-marrom-texto font-medium">
+            Contratos particulares bem redigidos
+          </h2>
+          <p class="text-sm text-marrom-suave leading-relaxed">
+            Documentos formatados com cuidado, prontos para assinatura e reconhecimento de firma em cartório.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Serviços -->
+  <section id="servicos" class="py-20 sm:py-28 bg-bege-escuro/60 border-y border-linha px-6 sm:px-8">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-linha">
+        <div class="space-y-2 max-w-xl">
+          <p class="text-xs uppercase tracking-[0.2em] text-marrom font-medium">Áreas de Atuação</p>
+          <h2 class="font-serif text-3xl sm:text-4xl font-normal text-marrom-texto">
+            Como posso ajudar no seu dia a dia
+          </h2>
+        </div>
+
+        <div class="flex items-center gap-6 border-b border-transparent" role="tablist" aria-label="Filtrar serviços">
+          <button
+            type="button"
+            role="tab"
+            aria-selected="true"
+            data-tab="negocio"
+            onclick="filterServices('negocio')"
+            class="service-tab pb-2 text-sm font-medium border-b-2 border-marrom text-marrom-texto transition-colors"
+          >
+            MEI &amp; Autônomos
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-tab="pessoal"
+            onclick="filterServices('pessoal')"
+            class="service-tab pb-2 text-sm font-medium border-b-2 border-transparent text-marrom-suave hover:text-marrom-texto transition-colors"
+          >
+            Pessoa Física
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-tab="todos"
+            onclick="filterServices('todos')"
+            class="service-tab pb-2 text-sm font-medium border-b-2 border-transparent text-marrom-suave hover:text-marrom-texto transition-colors"
+          >
+            Todos
+          </button>
+        </div>
+      </div>
+
+      <div id="services-grid" class="divide-y divide-linha">
+        
+        <article data-category="negocio" class="service-card py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">MEI &amp; Autônomos</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Organização Financeira e Planilhas
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Estruturação de controle de entradas e saídas, contas a pagar e a receber e planilhas personalizadas no Excel para acompanhar a saúde financeira do negócio com clareza.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('MEI / Autônomo', 'Organização Financeira e Planilhas')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <article data-category="negocio" class="service-card py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">MEI &amp; Autônomos</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Rotinas Administrativas e Documentais
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Padronização de arquivos, organização documental, controle de prazos e rotinas administrativas simples para deixar a operação do dia a dia mais leve.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('MEI / Autônomo', 'Rotinas Administrativas e Documentais')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <article data-category="negocio" class="service-card py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">MEI &amp; Autônomos</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Apoio Operacional e Controles Internos
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Organização de planilhas de apoio, conferência de controles internos (como banco de horas e registros operacionais) e checklists práticos para o negócio.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('MEI / Autônomo', 'Apoio Operacional e Controles Internos')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <article data-category="negocio" class="service-card py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">MEI &amp; Autônomos</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Imposto de Renda e Organização MEI
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Apoio e organização documental para MEI — reunindo faturamento, despesas, notas, comprovantes e registros — e organização das informações para a declaração de Imposto de Renda.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('MEI / Autônomo', 'Imposto de Renda e Organização MEI')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <article data-category="pessoal" class="service-card hidden py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">Pessoa Física</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Orçamento e Balanço Familiar
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Organização das finanças domésticas com orçamento e balanço familiar, estruturação da reserva de emergência e planejamento alinhado a cada etapa do seu ciclo de vida.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('Pessoa Física', 'Orçamento e Balanço Familiar')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <article data-category="pessoal" class="service-card hidden py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">Pessoa Física</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Gestão de Dívidas e Produtos de Crédito
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Levantamento de pendências, montagem de plano organizado para gestão de dívidas e orientação clara sobre o uso consciente de produtos de crédito.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('Pessoa Física', 'Gestão de Dívidas e Produtos de Crédito')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <article data-category="pessoal" class="service-card hidden py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">Pessoa Física</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Organização de Documentos
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Triagem, classificação e organização prática de documentos pessoais, recibos, comprovantes e arquivos importantes para facilitar o seu dia a dia.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('Pessoa Física', 'Organização de Documentos')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <article data-category="pessoal" class="service-card hidden py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">Pessoa Física</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Contratos e Documentos Particulares
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Elaboração e formatação cuidadosa de contratos particulares (como compra e venda, acordos simples e recibos) prontos para assinatura e reconhecimento de firma em cartório.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('Pessoa Física', 'Contratos e Documentos Particulares')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <article data-category="pessoal" class="service-card hidden py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs uppercase tracking-wider text-marrom font-medium">Pessoa Física</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-marrom-texto group-hover:text-marrom transition-colors">
+              Declaração de Imposto de Renda Pessoa Física
+            </h3>
+            <p class="text-sm text-marrom-suave leading-relaxed">
+              Organização completa de informes de rendimentos, comprovantes de despesas, bens e documentos necessários, com apoio na elaboração da declaração de Imposto de Renda Pessoa Física.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button
+              type="button"
+              onclick="requestService('Pessoa Física', 'Declaração de Imposto de Renda Pessoa Física')"
+              class="inline-flex items-center gap-2 text-sm font-medium text-marrom-texto hover:text-marrom border-b border-marrom/40 hover:border-marrom pb-1 transition-colors"
+            >
+              <span>Solicitar orçamento</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="mt-8 text-xs text-marrom-suave">
+        * Atuação focada em apoio administrativo, organização financeira, criação de planilhas e elaboração documental.
+      </p>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section id="como-funciona" class="py-20 sm:py-28 px-6 sm:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="max-w-xl space-y-2 mb-14">
+        <p class="text-xs uppercase tracking-[0.2em] text-marrom font-medium">Método de Trabalho</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-marrom-texto">
+          Atendimento simples em quatro etapas
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-t border-linha pt-10">
+        <div class="space-y-3">
+          <span class="block font-serif text-2xl text-marrom">I.</span>
+          <h3 class="font-serif text-lg text-marrom-texto font-medium">Você conta o que precisa</h3>
+          <p class="text-sm text-marrom-suave leading-relaxed">
+            Me chama no WhatsApp e explica o que está precisando organizar, calcular, documentar ou preparar.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <span class="block font-serif text-2xl text-marrom">II.</span>
+          <h3 class="font-serif text-lg text-marrom-texto font-medium">Alinhamos o escopo</h3>
+          <p class="text-sm text-marrom-suave leading-relaxed">
+            Definimos juntos o formato do serviço, o prazo de entrega e o investimento com total transparência.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <span class="block font-serif text-2xl text-marrom">III.</span>
+          <h3 class="font-serif text-lg text-marrom-texto font-medium">Organização e estrutura</h3>
+          <p class="text-sm text-marrom-suave leading-relaxed">
+            Estruturo suas planilhas, rotinas, documentos, controles financeiros ou informações para Imposto de Renda.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <span class="block font-serif text-2xl text-marrom">IV.</span>
+          <h3 class="font-serif text-lg text-marrom-texto font-medium">Entrega e orientação</h3>
+          <p class="text-sm text-marrom-suave leading-relaxed">
+            Entrego tudo pronto para uso e explico de forma prática como manter a organização no dia a dia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mim com Foto 2 e Identificação Pessoal em destaque separado -->
+  <section id="sobre" class="py-20 sm:py-28 bg-bege-escuro/60 border-y border-linha px-6 sm:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Coluna Esquerda: Foto 2 com bordas arredondadas + Identificação Pessoal -->
+        <div class="lg:col-span-5 space-y-5 lg:border-r lg:border-linha lg:pr-8">
+          <figure class="space-y-2.5">
+            <div class="relative aspect-[4/3] bg-bege-claro overflow-hidden rounded-2xl border border-linha">
+              <img
+                src="fotopriscila.jpeg"
+                alt="Retrato de Priscilla Gomes em seu escritório com identidade de Apoio Administrativo e Financeiro"
+                onerror="this.onerror=null;this.src='https://placehold.co/800x600/EDE5DC/2C221E?text=Priscilla+Gomes';"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <figcaption class="text-xs text-marrom-suave px-1">
+              Priscilla Gomes — Escritório em Ananindeua/PA
+            </figcaption>
+          </figure>
+
+          <div class="space-y-3 pt-4 border-t border-linha text-sm">
+            <div>
+              <span class="block text-xs uppercase tracking-wider text-marrom-suave">Identificação Profissional</span>
+              <span class="text-marrom-texto font-medium block mt-0.5">Priscilla Gomes</span>
+              <span class="text-marrom-suave text-xs block">Apoio Administrativo e Financeiro • Ananindeua/PA</span>
+            </div>
+            <div>
+              <span class="block text-xs uppercase tracking-wider text-marrom-suave">Formação</span>
+              <span class="text-marrom-texto font-medium">Bacharel em Ciências Contábeis</span>
+            </div>
+            <div>
+              <span class="block text-xs uppercase tracking-wider text-marrom-suave">Especialidades</span>
+              <span class="text-marrom-texto">Rotinas Administrativas, Financeiro, Departamento Pessoal e Atendimento</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: História & Certificação -->
+        <div class="lg:col-span-7 space-y-6">
+          <p class="text-xs uppercase tracking-[0.2em] text-marrom font-medium">Sobre Mim</p>
+          <h2 class="font-serif text-2xl sm:text-3xl font-normal text-marrom-texto leading-snug">
+            Experiência prática e atendimento humano para trazer leveza à sua rotina.
+          </h2>
+          
+          <div class="space-y-4 text-base text-marrom-suave leading-relaxed">
+            <p>
+              Sou <strong class="text-marrom-texto font-medium">Priscilla Gomes</strong>, bacharel em Ciências Contábeis com sólida experiência em rotinas administrativas, financeiras, Departamento Pessoal e atendimento ao cliente.
+            </p>
+            <p>
+              Ao longo da minha trajetória, aprendi que organizar contas, documentos e processos não precisa ser burocrático ou distante. Meu trabalho é acolher cada cliente com escuta, clareza e capricho para transformar pendências em tranquilidade.
+            </p>
+          </div>
+
+          <blockquote class="mt-8 pl-5 border-l-2 border-marrom py-1 space-y-1.5">
+            <p class="text-xs uppercase tracking-wider text-marrom font-medium">
+              Microcertificação em Atendimento Financeiro
+            </p>
+            <p class="text-sm text-marrom-texto leading-relaxed">
+              Formação direcionada a <strong>orçamento e balanço familiar</strong>, <strong>reserva de emergência</strong>, <strong>ciclo de vida</strong>, <strong>produtos de crédito</strong> e <strong>gestão de dívidas</strong>.
+            </p>
+          </blockquote>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Orçamento / Contato -->
+  <section id="contato" class="py-20 sm:py-28 px-6 sm:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="max-w-xl space-y-2 mb-12">
+        <p class="text-xs uppercase tracking-[0.2em] text-marrom font-medium">Contato</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-marrom-texto">
+          Vamos conversar sobre o que você precisa
+        </h2>
+        <p class="text-sm sm:text-base text-marrom-suave">
+          Preencha os campos abaixo para montar sua mensagem e iniciar o atendimento pelo WhatsApp.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div>
+            <label for="client-name" class="block text-xs uppercase tracking-wider text-marrom-suave font-medium mb-2">
+              Seu nome
+            </label>
+            <input
+              id="client-name"
+              type="text"
+              placeholder="Ex.: Ana Paula"
+              oninput="updateWhatsAppPreview()"
+              class="w-full px-4 py-3 rounded-md bg-bege-claro border border-linha text-marrom-texto text-sm focus:outline-none focus:border-marrom transition-colors"
+            />
+          </div>
+
+          <div>
+            <span class="block text-xs uppercase tracking-wider text-marrom-suave font-medium mb-2">
+              Perfil de atendimento
+            </span>
+            <div class="grid grid-cols-2 gap-3">
+              <button
+                type="button"
+                id="profile-negocio"
+                onclick="setFormProfile('MEI / Autônomo')"
+                class="profile-btn py-3 px-4 rounded-md text-sm font-medium border transition-colors bg-marrom text-white border-marrom"
+              >
+                MEI / Autônomo
+              </button>
+              <button
+                type="button"
+                id="profile-pessoal"
+                onclick="setFormProfile('Pessoa Física')"
+                class="profile-btn py-3 px-4 rounded-md text-sm font-medium border transition-colors bg-bege-claro text-marrom-texto border-linha hover:border-marrom"
+              >
+                Pessoa Física
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <label for="service-select" class="block text-xs uppercase tracking-wider text-marrom-suave font-medium mb-2">
+              Serviço desejado
+            </label>
+            <select
+              id="service-select"
+              onchange="updateWhatsAppPreview()"
+              class="w-full px-4 py-3 rounded-md bg-bege-claro border border-linha text-marrom-texto text-sm focus:outline-none focus:border-marrom transition-colors"
+            >
+              <option value="">Selecione um serviço...</option>
+              <optgroup label="MEI &amp; Autônomos">
+                <option value="Organização Financeira e Planilhas">Organização Financeira e Planilhas</option>
+                <option value="Rotinas Administrativas e Documentais">Rotinas Administrativas e Documentais</option>
+                <option value="Apoio Operacional e Controles Internos">Apoio Operacional e Controles Internos</option>
+                <option value="Imposto de Renda e Organização MEI">Imposto de Renda e Organização MEI</option>
+              </optgroup>
+              <optgroup label="Pessoa Física">
+                <option value="Orçamento e Balanço Familiar">Orçamento e Balanço Familiar (reserva, ciclo de vida)</option>
+                <option value="Gestão de Dívidas e Produtos de Crédito">Gestão de Dívidas e Produtos de Crédito</option>
+                <option value="Organização de Documentos">Organização de Documentos</option>
+                <option value="Contratos e Documentos Particulares">Contratos e Documentos Particulares</option>
+                <option value="Declaração de Imposto de Renda Pessoa Física">Declaração de Imposto de Renda Pessoa Física</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div>
+            <label for="client-notes" class="block text-xs uppercase tracking-wider text-marrom-suave font-medium mb-2">
+              Detalhes da sua necessidade (opcional)
+            </label>
+            <textarea
+              id="client-notes"
+              rows="3"
+              placeholder="Ex.: Preciso organizar os documentos e comprovantes do meu MEI para o Imposto de Renda..."
+              oninput="updateWhatsAppPreview()"
+              class="w-full px-4 py-3 rounded-md bg-bege-claro border border-linha text-marrom-texto text-sm focus:outline-none focus:border-marrom transition-colors"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-bege-escuro/80 border border-linha rounded-2xl p-6 sm:p-8 space-y-6">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between border-b border-linha pb-3">
+              <span class="text-xs uppercase tracking-wider font-medium text-marrom">Prévia da Mensagem</span>
+              <span class="text-xs text-marrom-suave">(91) 98601-4252</span>
+            </div>
+
+            <div
+              id="whatsapp-preview"
+              class="text-sm text-marrom-texto whitespace-pre-line leading-relaxed min-h-[140px] font-normal"
+            ></div>
+          </div>
+
+          <div class="space-y-3 pt-2">
+            <a
+              id="whatsapp-send-btn"
+              href="https://wa.me/5591986014252"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2 bg-marrom hover:bg-marrom-hover text-white font-medium py-3.5 px-5 rounded-md transition-colors text-sm"
+            >
+              <span>Enviar mensagem no WhatsApp</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+
+            <button
+              type="button"
+              onclick="copyMessage()"
+              class="w-full py-2.5 px-4 rounded-md bg-transparent hover:bg-bege text-marrom-texto border border-linha text-xs font-medium transition-colors"
+            >
+              Copiar texto
+            </button>
+
+            <div id="copy-feedback" role="status" aria-live="polite" class="hidden text-center text-xs font-medium text-marrom">
+              Texto copiado para a área de transferência.
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-linha text-xs text-marrom-suave space-y-1">
+            <p>WhatsApp: <span class="text-marrom-texto">(91) 98601-4252</span></p>
+            <p>E-mail: <span class="text-marrom-texto">crupriscilla@gmail.com</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé Discreto -->
+  <footer class="border-t border-linha py-12 px-6 sm:px-8">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-marrom-suave">
+      <div>
+        <p class="font-serif text-sm text-marrom-texto">Priscilla Gomes</p>
+        <p class="mt-0.5">Apoio Administrativo e Financeiro • Ananindeua/PA</p>
+      </div>
+      <p>
+        &copy; <span id="current-year"></span> Priscilla Gomes. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    let selectedProfile = 'MEI / Autônomo';
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+      });
+
+      document.querySelectorAll('.mobile-link').forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    function filterServices(category) {
+      try {
+        const tabs = document.querySelectorAll('.service-tab');
+        tabs.forEach((tab) => {
+          const isSelected = tab.dataset.tab === category;
+          tab.setAttribute('aria-selected', String(isSelected));
+          if (isSelected) {
+            tab.className = 'service-tab pb-2 text-sm font-medium border-b-2 border-marrom text-marrom-texto transition-colors';
+          } else {
+            tab.className = 'service-tab pb-2 text-sm font-medium border-b-2 border-transparent text-marrom-suave hover:text-marrom-texto transition-colors';
+          }
+        });
+
+        const cards = document.querySelectorAll('.service-card');
+        cards.forEach((card) => {
+          if (category === 'todos' || card.dataset.category === category) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      } catch (error) {
+        console.error('Erro ao filtrar os serviços:', error);
+      }
+    }
+
+    function selectAudienceAndScroll(category) {
+      filterServices(category);
+      setFormProfile(category === 'negocio' ? 'MEI / Autônomo' : 'Pessoa Física');
+      const target = document.getElementById('servicos');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function setFormProfile(profile) {
+      selectedProfile = profile;
+      const btnNegocio = document.getElementById('profile-negocio');
+      const btnPessoal = document.getElementById('profile-pessoal');
+
+      if (btnNegocio && btnPessoal) {
+        if (profile === 'MEI / Autônomo') {
+          btnNegocio.className = 'profile-btn py-3 px-4 rounded-md text-sm font-medium border transition-colors bg-marrom text-white border-marrom';
+          btnPessoal.className = 'profile-btn py-3 px-4 rounded-md text-sm font-medium border transition-colors bg-bege-claro text-marrom-texto border-linha hover:border-marrom';
+        } else {
+          btnPessoal.className = 'profile-btn py-3 px-4 rounded-md text-sm font-medium border transition-colors bg-marrom text-white border-marrom';
+          btnNegocio.className = 'profile-btn py-3 px-4 rounded-md text-sm font-medium border transition-colors bg-bege-claro text-marrom-texto border-linha hover:border-marrom';
+        }
+      }
+
+      updateWhatsAppPreview();
+    }
+
+    function requestService(profile, serviceName) {
+      setFormProfile(profile);
+      const selectEl = document.getElementById('service-select');
+      if (selectEl) {
+        selectEl.value = serviceName;
+      }
+      updateWhatsAppPreview();
+
+      const contactSection = document.getElementById('contato');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function updateWhatsAppPreview() {
+      try {
+        const nameEl = document.getElementById('client-name');
+        const serviceEl = document.getElementById('service-select');
+        const notesEl = document.getElementById('client-notes');
+        const previewEl = document.getElementById('whatsapp-preview');
+        const sendBtnEl = document.getElementById('whatsapp-send-btn');
+
+        const name = nameEl ? nameEl.value.trim() : '';
+        const service = serviceEl ? serviceEl.value : '';
+        const notes = notesEl ? notesEl.value.trim() : '';
+
+        const saudacao = name ? `Olá, Priscilla! Meu nome é ${name}.` : 'Olá, Priscilla! Tudo bem?'; let texto = `${saudacao}\nVi seu site e gostaria de solicitar um orçamento.\n\n• Perfil: ${selectedProfile}`;  if (service) { texto += `\n• Serviço: ${service}`;
+        }
+
+        if (notes) {
+          texto += `\n• Detalhes: ${notes}`; }  texto += '\n\nPodemos conversar?';  if (previewEl) { previewEl.textContent = texto; }  if (sendBtnEl) { sendBtnEl.href = `https://wa.me/5591986014252?text=${encodeURIComponent(texto)}`;
+        }
+      } catch (error) {
+        console.error('Erro ao atualizar a mensagem:', error);
+      }
+    }
+
+    function copyMessage() {
+      const previewEl = document.getElementById('whatsapp-preview');
+      const feedbackEl = document.getElementById('copy-feedback');
+      if (!previewEl) return;
+
+      const text = previewEl.textContent;
+      const tempTextarea = document.createElement('textarea');
+      tempTextarea.value = text;
+      tempTextarea.setAttribute('readonly', '');
+      tempTextarea.style.position = 'absolute';
+      tempTextarea.style.left = '-9999px';
+      document.body.appendChild(tempTextarea);
+      tempTextarea.select();
+
+      try {
+        document.execCommand('copy');
+        if (feedbackEl) {
+          feedbackEl.classList.remove('hidden');
+          setTimeout(() => {
+            feedbackEl.classList.add('hidden');
+          }, 2500);
+        }
+      } catch (error) {
+        console.error('Erro ao copiar:', error);
+      } finally {
+        document.body.removeChild(tempTextarea);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) {
+        yearEl.textContent = String(new Date().getFullYear());
+      }
+      updateWhatsAppPreview();
+    });
+  </script>
+</body>
+</html>
